@@ -54,7 +54,7 @@ file_path2="uber-raw-data-apr14.csv"
 @log_time
 def read_and_transform1(file_path):
     data=pd.read_csv(file_path)
-    data['Date/Time']=pd.to_datetime(data['Date/Time'])
+    data['Date/Time']=data['Date/Time'].map(pd.to_datetime)
     data['dom']=data['Date/Time'].map(get_dom)
     data['weekday']=data['Date/Time'].map(get_weekday)
     data['hour'] = data['Date/Time'].map(get_hour)
