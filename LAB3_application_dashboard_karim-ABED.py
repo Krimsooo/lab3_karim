@@ -46,8 +46,8 @@ def log_time(func):
 titre('🗃️')
 titre('Mon Dashboard pour les deux datasets')
 
-file_path1="C:/Users/Abed/Desktop/LAB3_Karim-ABED/st_app/uber-raw-data-apr14.csv"
-file_path2="C:/Users/Abed/Desktop/LAB3_Karim-ABED/st_app/ny-trips-data.csv"
+file_path1="ny-trips-data.csv"
+file_path2="uber-raw-data-apr14.csv"
 
 #----------------------------------------------------------------------------------------------------------------------
 @st.cache
