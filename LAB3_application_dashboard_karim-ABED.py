@@ -39,6 +39,7 @@ def log_time(func):
         time_res = end - start
         mes = "/n"+func.__name__+ " time = " + str(time_res) + " secondes"
         f.write(mes)
+        f.close()
         return result
 
     return wrapper
